@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+	<put-attribute name="title" value ="..."/>
+	<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />	
+	<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	<put-attribute name="content" value="BASE" />
+</definition>
+<definition name="index" extends="baseLayout">
+	<put-attribute name="title" value="Trang chu" />
+	<put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+</definition>
+<definition name="product" extends="baseLayout">
+	<put-attribute name="title" value="QUAN LY SAN PHAM" />
+	<put-attribute name="content" value="/WEB-INF/jsp/product.jsp" />
+</definition>
+<definition name="login" extends="baseLayout">
+	<put-attribute name="title" value="DANG NHAP" />
+	<put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+</definition>
+<definition name="register" extends="baseLayout">
+	<put-attribute name="title" value="DANG KY" />
+	<put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+</definition>
+<definition name="cart" extends="baseLayout">
+	<put-attribute name="title" value="GIO HANG" />
+	<put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
+</definition>
+<definition name="product-detail" extends="baseLayout">
+	<put-attribute name="title" value="CHI TIET SAN PHAM" />
+	<put-attribute name="content" value="/WEB-INF/jsp/product-detail.jsp" />
+</definition>
+</tiles-definitions>     
+
+
+
